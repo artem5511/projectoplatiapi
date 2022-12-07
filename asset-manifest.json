@@ -1,7 +1,7 @@
 {
   "main.css": "/projectoplatiapi/static/css/main.056d42be.chunk.css",
-  "main.js": "/projectoplatiapi/static/js/main.f7157aeb.chunk.js",
-  "main.js.map": "/projectoplatiapi/static/js/main.f7157aeb.chunk.js.map",
+  "main.js": "/projectoplatiapi/static/js/main.30185a06.chunk.js",
+  "main.js.map": "/projectoplatiapi/static/js/main.30185a06.chunk.js.map",
   "runtime~main.js": "/projectoplatiapi/static/js/runtime~main.978bd158.js",
   "runtime~main.js.map": "/projectoplatiapi/static/js/runtime~main.978bd158.js.map",
   "static/js/2.f6e0b6dc.chunk.js": "/projectoplatiapi/static/js/2.f6e0b6dc.chunk.js",
@@ -9,7 +9,7 @@
   "static/js/3.c390db1f.chunk.js": "/projectoplatiapi/static/js/3.c390db1f.chunk.js",
   "static/js/3.c390db1f.chunk.js.map": "/projectoplatiapi/static/js/3.c390db1f.chunk.js.map",
   "index.html": "/projectoplatiapi/index.html",
-  "precache-manifest.67e7d320dc786015c519407af0b53894.js": "/projectoplatiapi/precache-manifest.67e7d320dc786015c519407af0b53894.js",
+  "precache-manifest.4426ba777c737008213e46cfb9b91f00.js": "/projectoplatiapi/precache-manifest.4426ba777c737008213e46cfb9b91f00.js",
   "service-worker.js": "/projectoplatiapi/service-worker.js",
   "static/css/main.056d42be.chunk.css.map": "/projectoplatiapi/static/css/main.056d42be.chunk.css.map",
   "static/media/Sequence diagram for payment.jpg": "/projectoplatiapi/static/media/Sequence diagram for payment.ec46bfeb.jpg"

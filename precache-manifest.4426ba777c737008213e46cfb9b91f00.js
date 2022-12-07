@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b07699d548b8ed1d2203",
+    "revision": "b57a6a4c50684d664c3c",
     "url": "/projectoplatiapi/static/css/main.056d42be.chunk.css"
   },
   {
-    "revision": "b07699d548b8ed1d2203",
-    "url": "/projectoplatiapi/static/js/main.f7157aeb.chunk.js"
+    "revision": "b57a6a4c50684d664c3c",
+    "url": "/projectoplatiapi/static/js/main.30185a06.chunk.js"
   },
   {
     "revision": "45aab333af8d18f3537e",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/projectoplatiapi/static/media/Sequence diagram for payment.ec46bfeb.jpg"
   },
   {
-    "revision": "20acda12f366fd6a34f68a7bb580022c",
+    "revision": "52d87f78ddd3bf2592153d958d0b79be",
     "url": "/projectoplatiapi/index.html"
   }
 ];
