@@ -9,17 +9,16 @@ import {List} from "@material-ui/core";
 
 
 const App = () => {
-
   return (
       <div>
         <div className={'one'}>
           <header className={'hed'}>
-            <NavLink to={"/home"}>Home</NavLink>
+            <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/methods"}>Methods of Payment</NavLink>
             <NavLink to={"/about"}>About  “Oplati”</NavLink>
           </header>
           <Routes>
-            <Route path={"/home"} element={<Homepage/>}/>
+            <Route path={"/"} element={<Homepage/>}/>
             {/*<Route path={"/about"} element={<About/>}/>*/}
             <Route path={"/methods"} element={<Methods/>}/>
             <Route path={"/about"} element={<About/>}/>
