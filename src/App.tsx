@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Routes, Route, NavLink} from 'react-router-dom';
 import './App.css';
 import {Homepage} from './components/Homepage'
 import {About} from './components/Aboutpage'
 import {Methods} from './components/Methods'
 import {Notfoundpage} from './components/Notfoundpage'
+import {List} from "@material-ui/core";
 
 
 const App = () => {
+
   return (
       <div>
         <div className={'one'}>
