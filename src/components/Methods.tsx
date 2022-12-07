@@ -22,7 +22,7 @@ export const Methods = () => {
             </div>
             <br/>
             <div>
-                <Button variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>
+                 <Button variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>
             </div>
         </div>
     );

@@ -19,7 +19,7 @@ const App = () => {
             <NavLink to={"/about"}>About  “Oplati”</NavLink>
           </header>
           <Routes>
-            <Route path={"/"} element={<Homepage/>}/>
+            <Route path={"/home"} element={<Homepage/>}/>
             {/*<Route path={"/about"} element={<About/>}/>*/}
             <Route path={"/methods"} element={<Methods/>}/>
             <Route path={"/about"} element={<About/>}/>

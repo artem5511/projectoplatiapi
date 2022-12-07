@@ -42,7 +42,7 @@ let requestParam: RequestInit = {
 };
 
  export const Request = () => {
-     fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
+     fetch("http://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
