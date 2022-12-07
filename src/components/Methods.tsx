@@ -3,7 +3,7 @@ import Sequense from './image/Sequence diagram for payment.jpg'
 import './Methods.css'
 import Button from '@material-ui/core/Button';
 import {makeStyles} from '@material-ui/core/styles';
-import {Request} from "./requests/List";
+import {Request} from "./requests/Post";
 
 export const Methods = () => {
     // function changeSizeImage () {
@@ -22,8 +22,9 @@ export const Methods = () => {
             </div>
             <br/>
             <div>
-                 <Button variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>
+                 <Button variant="contained" color="secondary" size="large" onClick={Request} id="get-text">ОПЛАТИТЬ</Button>
             </div>
+            <div className="result"></div>
         </div>
     );
 }

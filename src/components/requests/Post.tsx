@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {findAllByDisplayValue} from '@testing-library/react';
 
 const myHeaders = new Headers();
 myHeaders.append("regNum", "OPL000000722");
@@ -41,9 +42,23 @@ let requestParam: RequestInit = {
     mode: 'cors'
 };
 
- export const Request = () => {
-     fetch("http://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+export const Request = () => {
+
+    fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
+        .then(function (response) {
+            return response.text()
+        })
+        .then((data) => {
+           export let im = data
+            document.querySelector('.result')
+        })
+        // .then(function (data) {
+        //     console.log('data', data)
+        // })
+        .then(result => result)
+        .catch(error => console.log('error', error));
 }
+
+
+
+
