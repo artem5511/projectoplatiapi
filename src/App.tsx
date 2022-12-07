@@ -14,7 +14,7 @@ const App = () => {
       <div>
         <div className={'one'}>
           <header className={'hed'}>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/home"}>Home</NavLink>
             <NavLink to={"/methods"}>Methods of Payment</NavLink>
             <NavLink to={"/about"}>About  “Oplati”</NavLink>
           </header>
