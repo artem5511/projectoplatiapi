@@ -1,7 +1,6 @@
 App {
   display: flex;
   flex-direction: column;
-
 }
 
 header {
@@ -10,6 +9,31 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+Routes {
+  width: 1000px;
+}
+
+footer {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+}
+
+
+.foot {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -30,6 +54,5 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
+  height: 100%;
 }

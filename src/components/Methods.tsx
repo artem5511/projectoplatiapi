@@ -11,7 +11,7 @@ export const Methods = () => {
                 <img src={Sequense}/>
             </div>
             <div>
-                <button>оплатить</button>
+                <Button variant="contained">ОПЛАТИТЬ</Button>
             </div>
         </div>
 

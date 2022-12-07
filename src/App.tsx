@@ -23,6 +23,9 @@ const App = () => {
             <Route path={"/about"} element={<About/>}/>
             <Route path={"*"} element={<Notfoundpage/>}/>
           </Routes>
+                {/*<footer className={'foot'}>*/}
+                {/*    <span>logo</span>*/}
+                {/*</footer>*/}
         </div>
       </div>
   );
