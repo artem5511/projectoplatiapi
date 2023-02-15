@@ -42,7 +42,7 @@ let requestParam: RequestInit = {
 };
 
  export const Request = () => {
-     fetch("https://cashboxapi.o-plati.by/ms-pay/pos/webPayments", requestParam)
+     fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
     .then(response => response.json())
          .then((data) => {
          let im = data.
