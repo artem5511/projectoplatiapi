@@ -8,3 +8,12 @@ img {
     height: 600px;
 
 }
+
+
+.button_get {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+

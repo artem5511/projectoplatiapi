@@ -46,7 +46,7 @@ let requestParam: RequestInit = {
     .then(response => response.json())
          .then((data) => {
          let im = data.
-         document.querySelector('.result').insertAdjacentHTML('beforeend');
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-}
+         document.querySelector('.result').insertAdjacentHTML('beforeend')
+    .then((result: any) => console.log(result))
+    .catch((error: any) => console.log('error', error));
+})}

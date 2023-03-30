@@ -21,13 +21,16 @@ export const Methods = () => {
                 <img alt='' src={Sequense}/>
             </div>
             <br/>
-            <div>
-                 <Button variant="contained" color="secondary" size="large" onClick={Request} id="get-text">ОПЛАТИТЬ</Button>
+            <div className={'button_get'}>
+                <div>
+                    <Button  variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>
+                </div>
+                <div>
+                    <Button  variant="outlined" color="default" size="large" onClick={Request}>ПОЛУЧИТЬ СТАТУС</Button>
+                </div>
+                <div className="result">result</div>
             </div>
-            <div>
-                 <Button variant="contained" color="secondary" size="large" onClick={""} id="get-text">ПОЛУЧИТЬ СТАТУС</Button>
-            </div>
-            <div className="result"></div>
+
         </div>
     );
 }
