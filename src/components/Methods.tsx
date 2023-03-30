@@ -24,6 +24,9 @@ export const Methods = () => {
             <div>
                  <Button variant="contained" color="secondary" size="large" onClick={Request} id="get-text">ОПЛАТИТЬ</Button>
             </div>
+            <div>
+                 <Button variant="contained" color="secondary" size="large" onClick={""} id="get-text">ПОЛУЧИТЬ СТАТУС</Button>
+            </div>
             <div className="result"></div>
         </div>
     );
