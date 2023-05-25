@@ -11,7 +11,7 @@ import {List} from "@material-ui/core";
 const App = () => {
   return (
       <div>
-        <div className={'one'}>
+        <div className={'first'}>
           <header className={'hed'}>
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/methods"}>Methods of Payment</NavLink>
