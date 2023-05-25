@@ -43,17 +43,17 @@ let requestParam: RequestInit = {
 
 export const Request = () => {
 
-<!-- //      fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
+    fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
+        .then(response => response.text())
+        // .then(data => console.log(data));
+    .then(data => alert(data));
+}
+
+//      fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
 //     .then(response => response.json())
 //          .then((data) => {
 //          let im = data.
 //          document.querySelector('.result').insertAdjacentHTML('beforeend')
 //     .then((result: any) => console.log(result))
 //     .catch((error: any) => console.log('error', error));
-// }) -->
-
-    fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
-        .then(response => response.text())
-        // .then(data => console.log(data));
-    .then(data => alert(data));
-}
+// })
