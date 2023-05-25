@@ -4,6 +4,7 @@ import './Methods.css'
 import Button from '@material-ui/core/Button';
 import {makeStyles} from '@material-ui/core/styles';
 import {Request} from "./requests/Post";
+import {Requestget} from "./requests/Get";
 
 export const Methods = () => {
     // function changeSizeImage () {
