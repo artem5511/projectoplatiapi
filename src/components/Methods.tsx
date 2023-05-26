@@ -1,5 +1,7 @@
 import React from 'react';
 import Sequense from './image/Sequence diagram for payment.jpg'
+import webpayments from './image/postpayments.jpg'
+import imgget from './image/getpayments.jpg'
 import './Methods.css'
 import Button from '@material-ui/core/Button';
 import {makeStyles} from '@material-ui/core/styles';
@@ -18,11 +20,18 @@ export const Methods = () => {
         <div className={"box"}>
             <div className={"box1"}>
                 <div><h2>Merchant Presented Mode - Dynamic Website QR</h2></div>
-                <div><img alt='' src={Sequense}/></div>
+                <div><img className={"imgmain"} alt='' src={Sequense}/></div>
             </div>
             <div className={"box2"}>
-                <div><Button  variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button></div>
-                <div><Button  variant="outlined" color="default" size="large" onClick={Requestget}>ПОЛУЧИТЬ СТАТУС</Button></div>
+                <div>
+                    <div><Button  variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button></div>
+                    <div><img className={'imgpost'} alt='' src={webpayments}/></div>
+                </div>
+                <div>
+                    <div><Button  variant="contained" color="primary" size="large" onClick={Requestget}>ПОЛУЧИТЬ СТАТУС</Button></div>
+                    <div><img className={'imgget'} alt='' src={imgget}/></div>
+                </div>
+
                 <div className="result">result</div>
             </div>
             {/*<h1>Merchant Presented Mode - Dynamic Website QR</h1>*/}

@@ -1,12 +1,21 @@
-img {
-    width: 400px;
-    height: 300px;
+.imgmain {
+    width: 650px;
+    height: 450px;
+}
+
+.imgpost {
+    width: 120%;
+    height: 50%;
+}
+
+.imgget {
+    width: 120%;
+    height: 50%;
 }
 
 .diagram {
     width: 700px;
     height: 600px;
-
 }
 
 /*.button_get {*/
@@ -18,7 +27,7 @@ img {
     display: flex;
     flex-direction: row;
     width: 80%;
-    justify-content: space-evenly
+    justify-content: space-around;
     }
 .box1  {
     margin-right: 5%;
