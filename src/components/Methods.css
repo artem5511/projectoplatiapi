@@ -16,7 +16,6 @@ img {
 /*}*/
 .box  {
     display: flex;
-    justify-content: left;
     flex-direction: row;
     width: 80%;
     justify-content: space-evenly
