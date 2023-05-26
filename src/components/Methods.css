@@ -9,26 +9,27 @@ img {
 
 }
 
-.button_get {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+/*.button_get {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 .box  {
-    margin: 5%;
     display: flex;
+    justify-content: left;
     flex-direction: row;
-    justify-content: space-around;
-}
+    width: 80%;
+    justify-content: space-evenly
+    }
 .box1  {
-    margin: auto;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .box2  {
-    margin: auto;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
