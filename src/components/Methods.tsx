@@ -52,3 +52,4 @@ export const Methods = () => {
         </div>
     );
 }
+
