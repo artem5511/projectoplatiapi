@@ -5,7 +5,9 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {Demotest} from "./Methodspages/Demotest";
+import {Demotest} from "./Demotest";
+import Sequense from "./image/Sequence diagram for payment.jpg";
+
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -83,25 +85,29 @@ export default function ControlledAccordions() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <Demotest/>
+                        <div className={"box"}>
+                            <div className={"box1"}>
+                                <div><h2>Merchant Presented Mode - Dynamic Website QR</h2></div>
+                                <div><img className={"imgmain"} alt='' src={Sequense}/></div>
+                            </div>
+                        </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon/>}
                     aria-controls="panel3bh-content"
                     id="panel3bh-header"
                 >
-                    <Typography className={classes.heading}>Advanced settings</Typography>
+                    <Typography className={classes.heading}>Demo test</Typography>
                     <Typography className={classes.secondaryHeading}>
-                        Filtering has been entirely disabled for whole web server
+                       ...
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                        vitae egestas augue. Duis vel est augue.
+                      <Demotest/>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -122,4 +128,4 @@ export default function ControlledAccordions() {
             </Accordion>
         </div>
     );
-}
+};
