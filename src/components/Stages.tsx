@@ -39,13 +39,33 @@ export default function ControlledAccordions() {
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography className={classes.heading}>General settings</Typography>
+                    <Typography className={classes.heading}>Последовательность действий
+                    </Typography>
                     <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-                        maximus est, id dignissim quam.
+                        <p>Шаг 1: Пользователь на веб-сайте продавца оформляет заказ, помещая товары в
+                            корзину.</p>
+                        <p>
+                            Шаг 2: При переходе к оплате веб-сайт генерирует на странице QR-код (в случае,
+                            если пользователь открывает веб-сайт с ПК) либо кнопку (в случае, если пользователь
+                            открывает веб-сайт с телефона).</p>
+                        <p> Шаг 3: Покупатель выполняет следующие действия:
+                            <ul>
+                                <li> сканирует QR-код с экрана монитора ПК своим моб. приложением “Оплати” (в
+                                    случае, если пользователь открывает веб-сайт с ПК);</li>
+                                <li> нажимает кнопку со ссылкой на открытие приложения Оплати (в случае, если
+                                    пользователь открывает веб-сайт с телефона).</li>
+                            </ul>
+                            <p>Сканирование или переход по ссылке пользователем в моб. приложение позволяют
+                                осуществить оплату после подтверждения пользователя. В случае перехода по
+                                ссылке, приложение отправит пользователя обратно на страницу веб-сайта
+                                (успешного либо не успешного результата оплаты).
+                               <p> Примечание: данный способ оплаты исключает возможность использования программ
+                                   лояльности продавца.</p>
+                           </p>
+                        </p>
                     </Typography>
                 </AccordionDetails>
             </Accordion>

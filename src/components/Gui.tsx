@@ -12,7 +12,7 @@ export const Gui = () => {
                 <p>Примеры оформления сайта и текущих статусов стостояния платежа</p>
             </div>
             <div className={'bl'}>
-                This page doesn't exist. Go <NavLink to="/" style={colorAdo}>Home</NavLink>
+            This page doesn't exist. Go <NavLink to="/" style={colorAdo}>Home</NavLink>
             </div>
         </>
 
