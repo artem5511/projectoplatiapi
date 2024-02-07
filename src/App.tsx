@@ -15,6 +15,7 @@ const App = () => {
           <header className={'hed'}>
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/methods"}>Methods of Payment</NavLink>
+            <NavLink to={"/about"}>Guide UI</NavLink>
             <NavLink to={"/about"}>About  “Oplati”</NavLink>
           </header>
           <Routes>
