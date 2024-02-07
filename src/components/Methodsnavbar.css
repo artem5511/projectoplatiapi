@@ -1,0 +1,6 @@
+
+.hednav {
+  display: flex;
+  flex-flow: column-reverse;
+  height: 100%;
+}

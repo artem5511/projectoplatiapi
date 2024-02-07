@@ -3,13 +3,13 @@ App {
   flex-direction: column;
 }
 
-header {
-  align-items: center;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+/*header {*/
+/*  align-items: center;*/
+/*  width: 500px;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: space-around;*/
+/*}*/
 
 Routes {
   width: 1000px;
@@ -38,6 +38,14 @@ footer {
 
 a {
   color: white;
+  margin-left: 20px;
+}
+a:focus {
+  color: mediumspringgreen;
+  margin-left: 25px;
+}
+a:hover {
+  color: orangered;
   margin-left: 20px;
 }
 
