@@ -7,14 +7,12 @@ export const Gui = () => {
         color: 'blue'
     }
     return (
-        <>
-            <div>
+        <div>
                 <p>Примеры оформления сайта и текущих статусов стостояния платежа</p>
-            </div>
             <div className={'bl'}>
             This page doesn't exist. Go <NavLink to="/" style={colorAdo}>Home</NavLink>
             </div>
-        </>
+        </div>
 
     );
 }
