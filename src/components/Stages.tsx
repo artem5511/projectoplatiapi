@@ -7,12 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {Demotest} from "./Demotest";
 import Sequense from "./image/Sequence diagram for payment.jpg";
-
+import QR from "./image/bandicam 2024-02-13 15-54-36-888.jpg";
+import './Methods.css'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
-            width: '100%',
+            width: '90%',
         },
         heading: {
             fontSize: theme.typography.pxToRem(15),
@@ -44,7 +45,7 @@ export default function ControlledAccordions() {
                 >
                     <Typography className={classes.heading}>Последовательность действий
                     </Typography>
-                    <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+                    <Typography className={classes.secondaryHeading}>+ пример QR-кода</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -57,30 +58,36 @@ export default function ControlledAccordions() {
                         <p> Шаг 3: Покупатель выполняет следующие действия:
                             <ul>
                                 <li> сканирует QR-код с экрана монитора ПК своим моб. приложением “Оплати” (в
-                                    случае, если пользователь открывает веб-сайт с ПК);</li>
+                                    случае, если пользователь открывает веб-сайт с ПК);
+                                </li>
                                 <li> нажимает кнопку со ссылкой на открытие приложения Оплати (в случае, если
-                                    пользователь открывает веб-сайт с телефона).</li>
+                                    пользователь открывает веб-сайт с телефона).
+                                </li>
                             </ul>
                             <p>Сканирование или переход по ссылке пользователем в моб. приложение позволяют
                                 осуществить оплату после подтверждения пользователя. В случае перехода по
                                 ссылке, приложение отправит пользователя обратно на страницу веб-сайта
                                 (успешного либо не успешного результата оплаты).
-                               <p> Примечание: данный способ оплаты исключает возможность использования программ
-                                   лояльности продавца.</p>
-                           </p>
+                                <p> Примечание: данный способ оплаты исключает возможность использования программ
+                                    лояльности продавца.</p>
+                            </p>
+                            <p  className={"p1"}>
+                                <p>"dynamicQR":"o-plati://o-webpay/dyn/wIXeI4kzFp64h3nXzpLrlnczCl0=</p>
+                                <p><img src={QR} alt="упс..."/></p>
+                            </p>
                         </p>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon/>}
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
                     <Typography className={classes.heading}>Диаграмма последовательностей при оплате</Typography>
                     <Typography className={classes.secondaryHeading}>
-                        +используемые запросы
+                    +используемые запросы
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
