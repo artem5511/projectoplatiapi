@@ -41,13 +41,15 @@ let requestParam: RequestInit = {
     mode: 'cors'
 };
 
-export const Request = () => {
-
-    fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
-        .then(response => response.text())
-        // .then(data => console.log(data));
-    .then(data => alert(data));
+export const Request =async () => {
+    const obj = await  fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
+       const answer = await obj.json();
+    let result = 'paymentId ' + answer.paymentId;
+        // .then(data => alert(('paymentId ' + data.paymentId)));
+    //     .then(data => {paymentID = (data.paymentId)});
+    console.log(result)
 }
+
 
 //      fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
 //     .then(response => response.json())
