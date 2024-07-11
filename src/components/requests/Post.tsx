@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+// const [paymentID, setPaymentID] = React.useState<number>(1);
 
 const myHeaders = new Headers();
 myHeaders.append("regNum", "OPL000000722");
@@ -44,13 +46,14 @@ let requestParam: RequestInit = {
 export const Request =async () => {
     const obj = await  fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
        const answer = await obj.json();
-    let result = 'paymentId ' + answer.paymentId;
+    let resultid = 'paymentId ' + answer.paymentId;
+    let resultqr = 'dynamicQR ' + answer.dynamicQR;
         // .then(data => alert(('paymentId ' + data.paymentId)));
     //     .then(data => {paymentID = (data.paymentId)});
-    alert(result)
-    console.log(result)
+    alert(resultqr)
+    console.log(resultid);
 }
-
+// console.log(paymentID)
 
 //      fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
 //     .then(response => response.json())

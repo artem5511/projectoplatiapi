@@ -12,9 +12,11 @@ let requestParam: RequestInit = {
     mode: 'cors'
 };
 
+
+
 export const Requestget = () => {
 
-    fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/payments/38717', requestParam)
+    fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/payments/'+'props.result', requestParam)
         .then(response => response.text())
         // .then(data => console.log(data));
         .then(data => alert(data));
