@@ -47,6 +47,7 @@ export const Request =async () => {
     let result = 'paymentId ' + answer.paymentId;
         // .then(data => alert(('paymentId ' + data.paymentId)));
     //     .then(data => {paymentID = (data.paymentId)});
+    alert(result)
     console.log(result)
 }
 
