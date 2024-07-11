@@ -50,8 +50,13 @@ export const Request =async () => {
     let resultqr = 'dynamicQR ' + answer.dynamicQR;
         // .then(data => alert(('paymentId ' + data.paymentId)));
     //     .then(data => {paymentID = (data.paymentId)});
-    alert(resultqr)
+    // alert(resultqr)
     console.log(resultid);
+    const RequestQR = async () => {
+        const obj2 = await  fetch('https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+ answer.dynamicQR);
+        const answer2 = await obj.text();
+        console.log(answer2)
+    }
 }
 // console.log(paymentID)
 
