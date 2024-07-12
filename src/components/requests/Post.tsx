@@ -68,7 +68,7 @@ export const Request =async () => {;
     // const Request2  = () => {
     //     <Link to={'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + 'resultq'} target="_blank">Внешняя Ссылка</Link>
     // }
-    Request2()
+    // Request2()
 }
 
 // console.log(paymentID)
