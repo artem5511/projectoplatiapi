@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from "react-router-dom";
 
 // const [paymentID, setPaymentID] = React.useState<number>(1);
 
@@ -43,21 +44,33 @@ let requestParam: RequestInit = {
     mode: 'cors'
 };
 
-export const Request =async () => {
-    const obj = await  fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
+
+export const Request =async () => {;
+        const obj = await  fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
        const answer = await obj.json();
     let resultid = 'paymentId ' + answer.paymentId;
     let resultqr = 'dynamicQR ' + answer.dynamicQR;
         // .then(data => alert(('paymentId ' + data.paymentId)));
     //     .then(data => {paymentID = (data.paymentId)});
-    // alert(resultqr)
+    alert(resultqr)
     console.log(resultid);
-    const RequestQR = async () => {
-        const obj2 = await  fetch('https://api.qrserver.com/v1/create-qr-code/?size=300x300&data='+ answer.dynamicQR);
-        const answer2 = await obj.text();
-        console.log(answer2)
-    }
+    // function showQR() {
+    //     let newqr = resultqr;
+    //     alert(newqr);
+    // };
+    // showQR()
+    // const Request2 =async () => {
+    //     const obj2 = await fetch('https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + resultqr);
+    //     const answer2 = await obj2.text();
+    //     let resultapiqr = answer2;
+    //     alert(resultapiqr)
+    // }
+    // const Request2  = () => {
+    //     <Link to={'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + 'resultq'} target="_blank">Внешняя Ссылка</Link>
+    // }
+    Request2()
 }
+
 // console.log(paymentID)
 
 //      fetch("https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments", requestParam)
