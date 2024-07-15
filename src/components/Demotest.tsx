@@ -20,33 +20,20 @@ export const Demotest = () => {
         <div className={"box"}>
             <div className={"box2"}>
                 <div>
-                    <div><Button variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>
+                    <div><Button variant="contained" color="secondary" size="large" onClick={Request}>ЗАПРОС
+                        ОПЛАТЫ</Button>
                     </div>
-                    <div><img className={'imgpost'} alt='' src={webpayments}/></div>
-                </div>
-                <div>
-                    <div><Button variant="contained" color="primary" size="large" onClick={Requestget}>ПОЛУЧИТЬ
-                        СТАТУС</Button></div>
-                    <div><img className={'imgget'} alt='' src={imgget}/></div>
+                    <div><Button variant="contained" color="primary" size="large" onClick={Request}>ПОКАЗАТЬ
+                        QR</Button>
+                    </div>
+                    <div className={"boximg"}><img className={'imgpost'} alt='' src={webpayments}/></div>
+                    <div>
+                        <div><Button variant="contained" color="primary" size="large" onClick={Requestget}>ПОЛУЧИТЬ
+                            СТАТУС</Button></div>
+                        <div><img className={'imgget'} alt='' src={imgget}/></div>
+                    </div>
                 </div>
             </div>
-            {/*    <div className="result">result</div>*/}
-            {/*</div>*/}
-            {/*<h1>Merchant Presented Mode - Dynamic Website QR</h1>*/}
-            {/*Сканирование QR-кода мерчанта - Динамический QR на веб-сайте*/}
-            {/*<div>*/}
-            {/*    <img alt='' src={Sequense}/>*/}
-            {/*</div>*/}
-            {/*<br/>*/}
-            {/*<div className={'button_get'}>*/}
-            {/*    <div>*/}
-            {/*        <Button  variant="contained" color="secondary" size="large" onClick={Request}>ОПЛАТИТЬ</Button>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        <Button  variant="outlined" color="default" size="large" onClick={Requestget}>ПОЛУЧИТЬ СТАТУС</Button>*/}
-            {/*    </div>*/}
-            {/*    <div className="result">result</div>*/}
-            {/*</div>*/}
         </div>
-    );
-}
+    )
+};

@@ -45,7 +45,7 @@ let requestParam: RequestInit = {
 };
 
 
-export const Request =async () => {;
+export const Request =async () => {
         const obj = await  fetch('https://bpay-testcashdesk.lwo.by/ms-pay/pos/webPayments', requestParam)
        const answer = await obj.json();
     let resultid = 'paymentId ' + answer.paymentId;
@@ -54,6 +54,11 @@ export const Request =async () => {;
     //     .then(data => {paymentID = (data.paymentId)});
     alert(resultqr)
     console.log(resultid);
+
+    // (new Image()).src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + resultqr;
+    // const img = document.createElement('img');
+    // img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + 'resultqr';
+    // alert(img)
     // function showQR() {
     //     let newqr = resultqr;
     //     alert(newqr);
